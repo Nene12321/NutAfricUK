@@ -11,6 +11,32 @@
 		178DB6462A6DAD3A00EAB1C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178DB6452A6DAD3A00EAB1C5 /* ContentView.swift */; };
 		178DB6482A6DAD3B00EAB1C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178DB6472A6DAD3B00EAB1C5 /* Assets.xcassets */; };
 		178DB64B2A6DAD3B00EAB1C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178DB64A2A6DAD3B00EAB1C5 /* Preview Assets.xcassets */; };
+		178DB6542A6DAE5300EAB1C5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178DB6532A6DAE5300EAB1C5 /* LoginView.swift */; };
+		17A5D5B52A82555700464D93 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5D5B42A82555700464D93 /* SplashScreenView.swift */; };
+		17AD6FBA2A7D1AAA00A767B9 /* WhyFiveADayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FB92A7D1AAA00A767B9 /* WhyFiveADayView.swift */; };
+		17AD6FBC2A7D227300A767B9 /* FiveADayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FBB2A7D227300A767B9 /* FiveADayView.swift */; };
+		17AD6FBE2A7D484100A767B9 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FBD2A7D484100A767B9 /* DiscoverView.swift */; };
+		17AD6FC02A7D52E400A767B9 /* ShareRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FBF2A7D52E400A767B9 /* ShareRecipesView.swift */; };
+		17AD6FC22A7D5A6300A767B9 /* ImageFiveADayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FC12A7D5A6300A767B9 /* ImageFiveADayView.swift */; };
+		17AD6FC42A7D5DBA00A767B9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FC32A7D5DBA00A767B9 /* ProfileView.swift */; };
+		17AD6FC62A7D6DF300A767B9 /* RecommendedChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FC52A7D6DF300A767B9 /* RecommendedChannelView.swift */; };
+		17AD6FC82A7D712600A767B9 /* YouTubeChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FC72A7D712600A767B9 /* YouTubeChannelView.swift */; };
+		17D99DDA2A6EDC4E00E30F55 /* AfricanFoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D99DD92A6EDC4E00E30F55 /* AfricanFoodDetailView.swift */; };
+		17D99DDC2A700FD700E30F55 /* HealthySwapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D99DDB2A700FD700E30F55 /* HealthySwapDetailView.swift */; };
+		17D99DDE2A719E7B00E30F55 /* HealthySwapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D99DDD2A719E7B00E30F55 /* HealthySwapView.swift */; };
+		17D99DE02A71A33F00E30F55 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D99DDF2A71A33F00E30F55 /* CommunityView.swift */; };
+		17F29C732A6DB5B700FDDCBD /* PoppinsMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F29C6B2A6DB5B700FDDCBD /* PoppinsMedium.ttf */; };
+		17F29C742A6DB5B700FDDCBD /* PoppinsExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F29C6C2A6DB5B700FDDCBD /* PoppinsExtraBold.ttf */; };
+		17F29C752A6DB5B700FDDCBD /* poppins_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F29C6D2A6DB5B700FDDCBD /* poppins_italic.ttf */; };
+		17F29C762A6DB5B700FDDCBD /* PoppinsThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F29C6E2A6DB5B700FDDCBD /* PoppinsThin.ttf */; };
+		17F29C772A6DB5B700FDDCBD /* PoppinsBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F29C6F2A6DB5B700FDDCBD /* PoppinsBold.ttf */; };
+		17F29C782A6DB5B700FDDCBD /* PoppinsBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F29C702A6DB5B700FDDCBD /* PoppinsBlack.ttf */; };
+		17F29C792A6DB5B700FDDCBD /* PoppinsRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F29C712A6DB5B700FDDCBD /* PoppinsRegular.ttf */; };
+		17F29C7A2A6DB5B700FDDCBD /* PoppinsSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F29C722A6DB5B700FDDCBD /* PoppinsSemiBold.ttf */; };
+		17F29C7D2A6DB95400FDDCBD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F29C7C2A6DB95400FDDCBD /* Extensions.swift */; };
+		17F29C7F2A6DC3D800FDDCBD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F29C7E2A6DC3D800FDDCBD /* SignUpView.swift */; };
+		17F29C822A6DCAD100FDDCBD /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F29C812A6DCAD100FDDCBD /* FoodView.swift */; };
+		17F29C852A6DCCFD00FDDCBD /* AfricanFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F29C842A6DCCFD00FDDCBD /* AfricanFoodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +45,33 @@
 		178DB6452A6DAD3A00EAB1C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		178DB6472A6DAD3B00EAB1C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		178DB64A2A6DAD3B00EAB1C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		178DB6532A6DAE5300EAB1C5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		17A5D5B42A82555700464D93 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		17AD6FB92A7D1AAA00A767B9 /* WhyFiveADayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyFiveADayView.swift; sourceTree = "<group>"; };
+		17AD6FBB2A7D227300A767B9 /* FiveADayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveADayView.swift; sourceTree = "<group>"; };
+		17AD6FBD2A7D484100A767B9 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		17AD6FBF2A7D52E400A767B9 /* ShareRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareRecipesView.swift; sourceTree = "<group>"; };
+		17AD6FC12A7D5A6300A767B9 /* ImageFiveADayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFiveADayView.swift; sourceTree = "<group>"; };
+		17AD6FC32A7D5DBA00A767B9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		17AD6FC52A7D6DF300A767B9 /* RecommendedChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedChannelView.swift; sourceTree = "<group>"; };
+		17AD6FC72A7D712600A767B9 /* YouTubeChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeChannelView.swift; sourceTree = "<group>"; };
+		17D99DD92A6EDC4E00E30F55 /* AfricanFoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricanFoodDetailView.swift; sourceTree = "<group>"; };
+		17D99DDB2A700FD700E30F55 /* HealthySwapDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthySwapDetailView.swift; sourceTree = "<group>"; };
+		17D99DDD2A719E7B00E30F55 /* HealthySwapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthySwapView.swift; sourceTree = "<group>"; };
+		17D99DDF2A71A33F00E30F55 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		17F29C6B2A6DB5B700FDDCBD /* PoppinsMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsMedium.ttf; sourceTree = "<group>"; };
+		17F29C6C2A6DB5B700FDDCBD /* PoppinsExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsExtraBold.ttf; sourceTree = "<group>"; };
+		17F29C6D2A6DB5B700FDDCBD /* poppins_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poppins_italic.ttf; sourceTree = "<group>"; };
+		17F29C6E2A6DB5B700FDDCBD /* PoppinsThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsThin.ttf; sourceTree = "<group>"; };
+		17F29C6F2A6DB5B700FDDCBD /* PoppinsBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsBold.ttf; sourceTree = "<group>"; };
+		17F29C702A6DB5B700FDDCBD /* PoppinsBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsBlack.ttf; sourceTree = "<group>"; };
+		17F29C712A6DB5B700FDDCBD /* PoppinsRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsRegular.ttf; sourceTree = "<group>"; };
+		17F29C722A6DB5B700FDDCBD /* PoppinsSemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsSemiBold.ttf; sourceTree = "<group>"; };
+		17F29C7B2A6DB5FA00FDDCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		17F29C7C2A6DB95400FDDCBD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		17F29C7E2A6DC3D800FDDCBD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		17F29C812A6DCAD100FDDCBD /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
+		17F29C842A6DCCFD00FDDCBD /* AfricanFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricanFoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17490E242A71AC5D00E74523 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				17D99DDF2A71A33F00E30F55 /* CommunityView.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
 		178DB6372A6DAD3A00EAB1C5 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +112,25 @@
 		178DB6422A6DAD3A00EAB1C5 /* NutAfriUK */ = {
 			isa = PBXGroup;
 			children = (
+				17AD6FB62A7D189E00A767B9 /* FiveADay */,
+				17490E242A71AC5D00E74523 /* Community */,
+				17F29C832A6DCCE300FDDCBD /* HealthyFood */,
+				17F29C802A6DCAAA00FDDCBD /* Food */,
+				17F29C7B2A6DB5FA00FDDCBD /* Info.plist */,
+				17F29C692A6DB3B300FDDCBD /* Utilities */,
+				178DB6522A6DAE0200EAB1C5 /* Register */,
+				178DB6512A6DADE800EAB1C5 /* Login */,
 				178DB6432A6DAD3A00EAB1C5 /* NutAfriUKApp.swift */,
 				178DB6452A6DAD3A00EAB1C5 /* ContentView.swift */,
 				178DB6472A6DAD3B00EAB1C5 /* Assets.xcassets */,
 				178DB6492A6DAD3B00EAB1C5 /* Preview Content */,
+				17AD6FBD2A7D484100A767B9 /* DiscoverView.swift */,
+				17AD6FBF2A7D52E400A767B9 /* ShareRecipesView.swift */,
+				17AD6FC12A7D5A6300A767B9 /* ImageFiveADayView.swift */,
+				17AD6FC32A7D5DBA00A767B9 /* ProfileView.swift */,
+				17AD6FC52A7D6DF300A767B9 /* RecommendedChannelView.swift */,
+				17AD6FC72A7D712600A767B9 /* YouTubeChannelView.swift */,
+				17A5D5B42A82555700464D93 /* SplashScreenView.swift */,
 			);
 			path = NutAfriUK;
 			sourceTree = "<group>";
@@ -65,6 +141,74 @@
 				178DB64A2A6DAD3B00EAB1C5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		178DB6512A6DADE800EAB1C5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				178DB6532A6DAE5300EAB1C5 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		178DB6522A6DAE0200EAB1C5 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				17F29C7E2A6DC3D800FDDCBD /* SignUpView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		17AD6FB62A7D189E00A767B9 /* FiveADay */ = {
+			isa = PBXGroup;
+			children = (
+				17AD6FB92A7D1AAA00A767B9 /* WhyFiveADayView.swift */,
+				17AD6FBB2A7D227300A767B9 /* FiveADayView.swift */,
+			);
+			path = FiveADay;
+			sourceTree = "<group>";
+		};
+		17F29C692A6DB3B300FDDCBD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				17F29C6A2A6DB3C900FDDCBD /* Fonts */,
+				17F29C7C2A6DB95400FDDCBD /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		17F29C6A2A6DB3C900FDDCBD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				17F29C6D2A6DB5B700FDDCBD /* poppins_italic.ttf */,
+				17F29C702A6DB5B700FDDCBD /* PoppinsBlack.ttf */,
+				17F29C6F2A6DB5B700FDDCBD /* PoppinsBold.ttf */,
+				17F29C6C2A6DB5B700FDDCBD /* PoppinsExtraBold.ttf */,
+				17F29C6B2A6DB5B700FDDCBD /* PoppinsMedium.ttf */,
+				17F29C712A6DB5B700FDDCBD /* PoppinsRegular.ttf */,
+				17F29C722A6DB5B700FDDCBD /* PoppinsSemiBold.ttf */,
+				17F29C6E2A6DB5B700FDDCBD /* PoppinsThin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		17F29C802A6DCAAA00FDDCBD /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				17D99DD92A6EDC4E00E30F55 /* AfricanFoodDetailView.swift */,
+				17F29C842A6DCCFD00FDDCBD /* AfricanFoodView.swift */,
+				17F29C812A6DCAD100FDDCBD /* FoodView.swift */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		17F29C832A6DCCE300FDDCBD /* HealthyFood */ = {
+			isa = PBXGroup;
+			children = (
+				17D99DDB2A700FD700E30F55 /* HealthySwapDetailView.swift */,
+				17D99DDD2A719E7B00E30F55 /* HealthySwapView.swift */,
+			);
+			path = HealthyFood;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +269,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F29C732A6DB5B700FDDCBD /* PoppinsMedium.ttf in Resources */,
+				17F29C752A6DB5B700FDDCBD /* poppins_italic.ttf in Resources */,
+				17F29C782A6DB5B700FDDCBD /* PoppinsBlack.ttf in Resources */,
+				17F29C792A6DB5B700FDDCBD /* PoppinsRegular.ttf in Resources */,
 				178DB64B2A6DAD3B00EAB1C5 /* Preview Assets.xcassets in Resources */,
+				17F29C742A6DB5B700FDDCBD /* PoppinsExtraBold.ttf in Resources */,
 				178DB6482A6DAD3B00EAB1C5 /* Assets.xcassets in Resources */,
+				17F29C7A2A6DB5B700FDDCBD /* PoppinsSemiBold.ttf in Resources */,
+				17F29C772A6DB5B700FDDCBD /* PoppinsBold.ttf in Resources */,
+				17F29C762A6DB5B700FDDCBD /* PoppinsThin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +289,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F29C822A6DCAD100FDDCBD /* FoodView.swift in Sources */,
+				17D99DDC2A700FD700E30F55 /* HealthySwapDetailView.swift in Sources */,
+				17AD6FBC2A7D227300A767B9 /* FiveADayView.swift in Sources */,
+				17F29C852A6DCCFD00FDDCBD /* AfricanFoodView.swift in Sources */,
+				178DB6542A6DAE5300EAB1C5 /* LoginView.swift in Sources */,
+				17AD6FBA2A7D1AAA00A767B9 /* WhyFiveADayView.swift in Sources */,
+				17F29C7F2A6DC3D800FDDCBD /* SignUpView.swift in Sources */,
+				17A5D5B52A82555700464D93 /* SplashScreenView.swift in Sources */,
+				17D99DE02A71A33F00E30F55 /* CommunityView.swift in Sources */,
+				17AD6FC62A7D6DF300A767B9 /* RecommendedChannelView.swift in Sources */,
 				178DB6462A6DAD3A00EAB1C5 /* ContentView.swift in Sources */,
+				17AD6FC42A7D5DBA00A767B9 /* ProfileView.swift in Sources */,
+				17AD6FC22A7D5A6300A767B9 /* ImageFiveADayView.swift in Sources */,
+				17D99DDA2A6EDC4E00E30F55 /* AfricanFoodDetailView.swift in Sources */,
+				17D99DDE2A719E7B00E30F55 /* HealthySwapView.swift in Sources */,
+				17AD6FC02A7D52E400A767B9 /* ShareRecipesView.swift in Sources */,
+				17AD6FBE2A7D484100A767B9 /* DiscoverView.swift in Sources */,
 				178DB6442A6DAD3A00EAB1C5 /* NutAfriUKApp.swift in Sources */,
+				17AD6FC82A7D712600A767B9 /* YouTubeChannelView.swift in Sources */,
+				17F29C7D2A6DB95400FDDCBD /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +439,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NutAfriUK/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NutAfriUK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +468,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NutAfriUK/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NutAfriUK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
