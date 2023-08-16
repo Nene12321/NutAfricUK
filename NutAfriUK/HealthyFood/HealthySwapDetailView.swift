@@ -11,7 +11,7 @@ struct HealthySwapDetailView: View {
     var body: some View {
         VStack{
             Text("Healthy Swaps")
-                .font(.custom("Poppins-Medium", size: 12))
+                .font(.custom("Poppins-Medium", size: 18))
             HStack{
                 Image("brownbeans")
                     .resizable()

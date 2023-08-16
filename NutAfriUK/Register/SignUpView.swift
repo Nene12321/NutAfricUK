@@ -33,6 +33,7 @@ struct SignUpView: View {
                 }
                 .padding(.horizontal)
                 .padding(.bottom)
+                
             
             TextField("", text: $email)
                 .frame(height: 45)

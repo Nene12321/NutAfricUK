@@ -11,7 +11,7 @@ struct HealthySwapView: View {
     var body: some View {
         VStack{
             Text("African Food")
-                .font(.custom("Poppins-Medium", size: 12))
+                .font(.custom("Poppins-Medium", size: 18))
                 .padding(.bottom, 20)
                 .padding(.top,10)
             Text("Alternatives to replace less healthy food choices in traditional African recipes")

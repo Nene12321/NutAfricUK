@@ -27,7 +27,9 @@ extension Color {
     static let greyColor = Color("ColorGrey")
     static let darkGreyColor = Color("ColorDarkGrey")
     static let grayColorTwo = Color("ColorGrayTwo")
+    static let lightprimaryColor = Color("LightColorPrimary")
     
 }
+
 
 

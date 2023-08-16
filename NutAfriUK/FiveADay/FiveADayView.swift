@@ -11,11 +11,14 @@ struct FiveADayView: View {
     var body: some View {
         VStack{
             Text("Five A Day")
-            Spacer()
+                .font(.custom("Poppins-Medium", size: 18))
+                .padding(.bottom)
+      
             VStack{
                 VStack{
                     HStack{
                         Text("🍏 Apple")
+                            .font(.custom("Poppins-Regular", size: 17))
                         Spacer()
                     }
                     
@@ -25,6 +28,7 @@ struct FiveADayView: View {
                 VStack{
                     HStack{
                         Text("🍌 Banana  ")
+                            .font(.custom("Poppins-Regular", size: 17))
                         Spacer()
                     }
                     Divider()
@@ -32,6 +36,7 @@ struct FiveADayView: View {
                 VStack{
                     HStack{
                         Text("🍇 Grape")
+                            .font(.custom("Poppins-Regular", size: 17))
                         Spacer()
                     }
                     Divider()
@@ -39,6 +44,7 @@ struct FiveADayView: View {
                 VStack{
                     HStack{
                         Text("🥗 Salad")
+                            .font(.custom("Poppins-Regular", size: 17))
                         Spacer()
                     }
                     Divider()
@@ -46,12 +52,15 @@ struct FiveADayView: View {
                 VStack{
                     HStack{
                         Text("🥤Orange Juice ")
+                            .font(.custom("Poppins-Regular", size: 17))
                         Spacer()
                     }
                     Divider()
                 }
-                Spacer()
+              
             }
+            .padding(.horizontal)
+            
             Button {
                 
             } label: {
@@ -69,7 +78,7 @@ struct FiveADayView: View {
                 
             }
         
-           
+            Spacer()
         }
         
     }
