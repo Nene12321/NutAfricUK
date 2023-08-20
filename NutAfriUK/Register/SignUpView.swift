@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct SignUpView: View {
+    @ObservedObject var viewModel:SignUpViewModel = SignUpViewModel()
     @State var firstname = ""
     @State var email = ""
     @State var password = ""
+    @State var shouldShowImagePicker = false
+    @State var image: UIImage?
     
     var body: some View {
         VStack{
@@ -19,8 +22,12 @@ struct SignUpView: View {
                 .padding(.bottom, 20)
                 .padding(.top,10)
             
-            Image("userprofile")
-                .padding(.bottom)
+            Button {
+                shouldShowImagePicker.toggle()
+            } label: {
+                Image("userprofile")
+                    .padding(.bottom)
+            }
             
             TextField("", text: $firstname)
                 .frame(height: 45)
@@ -47,7 +54,7 @@ struct SignUpView: View {
                 .padding(.horizontal)
                 .padding(.bottom)
                
-            TextField("", text: $password)
+            SecureField("", text: $password)
                 .frame(height: 45)
                 .keyboardType(.emailAddress)
                 .border(.black)
@@ -59,7 +66,7 @@ struct SignUpView: View {
                 .padding(.horizontal)
             
             Button {
-                
+                register()
             } label: {
                 HStack{
                     Text("Sign Up")
@@ -87,9 +94,22 @@ struct SignUpView: View {
                 }
                 
             }
+            
+            Text(viewModel.statusMessage)
+                .padding(.vertical)
+                .font(.custom("Poppins-Regular", size: 12))
+                .foregroundColor(.red)
              
             Spacer()
         }
+        .fullScreenCover(isPresented: $shouldShowImagePicker, onDismiss: nil) {
+            ImagePicker(image: $image)
+                .ignoresSafeArea()
+        }
+    }
+    
+    func register(){
+        viewModel.createNewAccount(model: SignUpModel(firstname: firstname, email: email, password: password, image: image))
     }
 }
 

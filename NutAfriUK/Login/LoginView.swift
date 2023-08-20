@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
+    @ObservedObject var viewModel:LoginViewModel = LoginViewModel()
     @State var email = ""
     @State var password = ""
     var body: some View {
@@ -41,7 +42,7 @@ struct LoginView: View {
                 .padding(.horizontal)
             
             Button {
-                
+                login()
             } label: {
                 HStack{
                     Text("Login")
@@ -69,9 +70,18 @@ struct LoginView: View {
                 }
                 
             }
+            
+            Text(viewModel.loginStatusMessage)
+                .padding(.vertical)
+                .font(.custom("Poppins-Regular", size: 12))
+                .foregroundColor(.red)
              
             Spacer()
         }
+    }
+    
+    func login(){
+        viewModel.loginUser(model: LoginModel(email: email, password: password))
     }
 }
 

@@ -7,19 +7,20 @@
 
 import SwiftUI
 
-struct HealthyFoodView2: View {
+struct AfricanFoodDetailView: View {
+    var food:FoodModel?
     var body: some View {
         VStack{
-            Text("African Food")
+            Text(food?.name ?? "")
                 .font(.custom("Poppins-Medium", size: 18))
                 .padding(.bottom, 20)
                 .padding(.top,10)
-            Image("palmoil")
+            Image(food?.image ?? "")
                 .resizable()
-                .frame(width:155, height: 204)
+                .frame(width:160, height: 204)
                 .padding(.bottom)
     
-            Text("This is a curated list of African foods that makes you feel like you never left home! very helpful to new entrants!")
+            Text(food?.description ?? "")
                 .foregroundColor(.greyColor)
                 .padding(.horizontal)
                 .padding(.bottom,50)
@@ -31,7 +32,7 @@ struct HealthyFoodView2: View {
                     .padding(.bottom)
                 Spacer()
             }
-            Text("Asda Superstore, Kumasi Shopping Market,Zamzam stores etc")
+            Text(food?.stores ?? "")
                 .foregroundColor(.greyColor)
                 .padding(.horizontal)
                  Spacer()
@@ -41,8 +42,8 @@ struct HealthyFoodView2: View {
     }
 }
 
-struct HealthyFoodView2_Previews: PreviewProvider {
+struct AfricanFoodDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        HealthyFoodView2()
+        AfricanFoodDetailView()
     }
 }

@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct AfricanFoodView: View {
+    @ObservedObject var viewModel:FoodViewModel = FoodViewModel()
+    @State var selectedFood:FoodModel? = nil
+    @State private var isPresenting = false
+    
     var body: some View {
         VStack{
             Text("African Food")
@@ -19,27 +23,41 @@ struct AfricanFoodView: View {
                 .foregroundColor(.primaryColor)
                 .padding(.bottom, 20)
                 .padding(.top,10)
-            HStack {
-              Image("indomie")
-                    .resizable()
-                    .frame(width:78, height: 70)
-                
-                Text("indomie Noodles")
-                Spacer()
-            }
-            .frame(maxWidth: .infinity, maxHeight: 83)
-            .background(Color.white)
-            .overlay {
-                RoundedRectangle(cornerRadius: 16)
-                    .stroke(Color.grayColor, lineWidth: 1)
-            }
             
+            
+            ForEach (viewModel.foods){ food in
+                HStack {
+                    Image(food.image)
+                        .resizable()
+                        .frame(width:78, height: 70)
+                    
+                    Text(food.name)
+                    Spacer()
+                }
+                .frame(maxWidth: .infinity, maxHeight: 83)
+
+                .background(Color.white)
+             
+                .overlay {
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(Color.grayColor, lineWidth: 1)
+                }
+                .onTapGesture {
+                    isPresenting = true
+                    selectedFood = food
+                }
+            }
+           
             Spacer()
             
         }
-        
         .padding()
-    
+        .onAppear{
+            viewModel.fetchFoods()
+        }
+        .navigationDestination(isPresented: $isPresenting, destination: {
+           AfricanFoodDetailView(food: selectedFood)
+        })
     }
     
 }
@@ -48,4 +66,8 @@ struct HealthyFoodView_Previews: PreviewProvider {
     static var previews: some View {
         AfricanFoodView()
     }
+}
+
+func getFood(){
+    
 }
