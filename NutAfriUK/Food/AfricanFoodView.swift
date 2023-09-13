@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AfricanFoodView: View {
     @ObservedObject var viewModel:FoodViewModel = FoodViewModel()
+    @ObservedObject var profileViewModel:ProfileViewModel = ProfileViewModel()
     @State var selectedFood:FoodModel? = nil
     @State private var isPresenting = false
     
@@ -18,7 +19,7 @@ struct AfricanFoodView: View {
                 .font(.custom("Poppins-Medium", size: 18))
                 .padding(.bottom, 20)
                 .padding(.top,10)
-            Text("Hello Nene,")
+            Text("Hello \(profileViewModel.user?.firstname.capitalized ?? ""),")
                 .font(.custom("Poppins-Medium", size: 23))
                 .foregroundColor(.primaryColor)
                 .padding(.bottom, 20)
@@ -53,7 +54,8 @@ struct AfricanFoodView: View {
         }
         .padding()
         .onAppear{
-            viewModel.fetchFoods()
+          viewModel.fetchFoods()
+            profileViewModel.fetchUser()
         }
         .navigationDestination(isPresented: $isPresenting, destination: {
            AfricanFoodDetailView(food: selectedFood)

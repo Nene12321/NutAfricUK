@@ -8,41 +8,62 @@
 import SwiftUI
 
 struct RecommendedChannelView: View {
+    @ObservedObject var viewModel:ProfileViewModel = ProfileViewModel()
+    @State var selectedChannel:ChannelModel? = nil
+    @Binding var isPresenting:Bool
+    @State var isPresentingYoutube:Bool = false
     var body: some View {
         VStack{
-           Text("Recommended African Channels ")
-                .font(.custom("Poppins-Medium", size: 18))
+            
+            
+            ZStack{
+                HStack{
+                    Button {
+                       isPresenting = false
+                    } label: {
+                        Image(systemName: "arrow.backward")
+                            .foregroundColor(.black)
+                    }
+                    
+                    Spacer()
+                }
+                .padding(.leading)
                 .padding(.bottom)
                 
-            HStack{
-                Text("Chef Nina Bmana")
-                    .font(.custom("Poppins-Regular", size: 16))
-                    .padding(.horizontal)
-                Spacer()
+                Text("Recommended Cooking Channels ")
+                     .font(.custom("Poppins-Medium", size: 16))
+                     .padding(.bottom)
             }
-            Divider()
-            HStack{
-                Text("Mbeki Thani")
-                    .font(.custom("Poppins-Regular", size: 16))
-                    .padding(.horizontal)
-                Spacer()
+           
+                
+            ForEach (viewModel.channelList()){ item in
+                VStack{
+                    HStack{
+                        Text(item.item)
+                            .padding(.top)
+                            .padding(.leading,30)
+                        Spacer()
+                    }
+                    
+                    Divider()
+                        .padding(.horizontal)
+                }
+                .onTapGesture {
+                    selectedChannel = item
+                    isPresentingYoutube = true
+                }
             }
-            Divider()
-            HStack{
-                Text("Rose Okafor")
-                    .font(.custom("Poppins-Regular", size: 16))
-                    .padding(.horizontal)
-                Spacer()
-            }
-            Divider()
          Spacer()
         }
+        .fullScreenCover(isPresented: $isPresentingYoutube, content: {
+          YouTubeChannelView(isPresenting: $isPresentingYoutube, channelItem: selectedChannel)
+        })
     
     }
 }
 
 struct RecommendedChannelView_Previews: PreviewProvider {
     static var previews: some View {
-        RecommendedChannelView()
+        RecommendedChannelView(isPresenting: .constant(false))
     }
 }

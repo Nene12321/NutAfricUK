@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CommunityView: View {
+    @ObservedObject var viewModel:CommunityViewModel = CommunityViewModel()
+    @State var selectedCommunity:CommunityModel? = nil
+    @State private var isPresenting = false
     var body: some View {
         VStack{
           Text("Community")
@@ -22,34 +25,11 @@ struct CommunityView: View {
                 .padding(.bottom)
 //            Image("fruitbowl")
 //            Text("Celebrate Five a Day")
-            HStack{
-                    VStack{
-                        Image("bowlfood")
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                        
-                    }
-                    .frame(width: 44, height: 44)
-                    .background(Color.lightprimaryColor)
-                    .cornerRadius(10)
-                    .padding(.leading)
-                    
-                    
-                    Text("Recipe Tips/ Food ideas")
-                    .padding(.leading)
-                    
-                    Spacer()
-            }
-            .frame(maxWidth: .infinity)
-            .padding(.vertical)
-            .background(Color.white)
-            .cornerRadius(10)
-            .padding(.horizontal,30)
-        
             
-            HStack{
+            ForEach (viewModel.communities){ community in
+                HStack{
                     VStack{
-                        Image("fruitbowl")
+                        Image(community.image)
                             .resizable()
                             .frame(width: 24, height: 24)
                         
@@ -60,25 +40,32 @@ struct CommunityView: View {
                     .padding(.leading)
                     
                     
-                    Text("Celebrate Five a Day")
-                    .padding(.leading)
+                    Text(community.title)
+                        .padding(.leading)
                     
                     Spacer()
-                
-               
+                }
+                .frame(maxWidth: .infinity)
+                .padding(.vertical)
+                .background(Color.white)
+                .cornerRadius(10)
+                .padding(.horizontal,30)
+                .onTapGesture {
+                    selectedCommunity = community
+                    isPresenting = true
+                }
             }
-            .frame(maxWidth: .infinity)
-            .padding(.vertical)
-            .background(Color.white)
-            .cornerRadius(10)
-            .padding(.horizontal,30)
-            .padding(.top, 10)
           
             Spacer()
             
         }
-        
         .background(Color.grayColorTwo)
+        .onAppear{
+            viewModel.fetchCommunities()
+        }
+        .navigationDestination(isPresented: $isPresenting, destination: {
+            CommunityChatView(community:selectedCommunity)
+        })
     }
 }
 

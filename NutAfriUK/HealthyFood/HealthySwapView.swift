@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct HealthySwapView: View {
+    @ObservedObject var viewModel:HealthySwapViewModel = HealthySwapViewModel()
+    @State var selectedFood:HealthySwapModel? = nil
+    @State private var isPresenting = false
+    
     var body: some View {
         VStack{
-            Text("African Food")
+            Text("Healthy Swaps")
                 .font(.custom("Poppins-Medium", size: 18))
                 .padding(.bottom, 20)
                 .padding(.top,10)
@@ -18,17 +22,29 @@ struct HealthySwapView: View {
                 .font(.custom("Poppins-Regular", size: 16))
                 .foregroundColor(.greyColor)
                 .padding(.horizontal)
-                Text("Beans")
-                .padding(.top)
-                .padding(.trailing,300)
-            
-            Divider()
-                .padding(.horizontal)
-            
+            ForEach (viewModel.healthyswaps){ healthyswap in
+                VStack{
+                    Text(healthyswap.item)
+                        .padding(.top)
+                        .padding(.trailing,300)
+                    
+                    Divider()
+                        .padding(.horizontal)
+                }
+                .onTapGesture {
+                    isPresenting = true
+                    selectedFood = healthyswap
+                }
+            }
             Spacer()
             
         }
-        
+        .onAppear{
+            viewModel.fetchHealthySwaps()
+        }
+        .navigationDestination(isPresented: $isPresenting, destination: {
+           HealthySwapDetailView(food: selectedFood)
+        })
     }
 }
 

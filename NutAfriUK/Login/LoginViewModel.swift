@@ -33,7 +33,7 @@ final class LoginViewModel: ObservableObject {
         Auth.auth().signIn(withEmail: model.email.lowercased(), password: model.password) { [weak self] result, err in
             if let err = err {
                 print("Failed to login user:", err)
-                self?.loginStatusMessage = "Failed to login user: \(err)"
+                self?.loginStatusMessage = "invalid Credentials! Please try again"
                 return
             }
 

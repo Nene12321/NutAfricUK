@@ -8,31 +8,32 @@
 import SwiftUI
 
 struct HealthySwapDetailView: View {
+    var food:HealthySwapModel?
     var body: some View {
         VStack{
             Text("Healthy Swaps")
                 .font(.custom("Poppins-Medium", size: 18))
             HStack{
-                Image("brownbeans")
+                Image(food?.itemimage ?? "")
                     .resizable()
                     .frame(width:140, height: 140)
                 
                 Spacer()
-                Image("Lentils")
+                Image(food?.alternativeimage ?? "")
                     .resizable()
                     .frame(width:140, height: 140)
                 
             }
             .padding(.horizontal, 30)
             HStack{
-                Text("Brown beans")
+                Text(food?.item ?? "")
                     .padding(.top)
                     .padding(.leading, 60)
                 Spacer()
-                Text("Lentils")
+                Text(food?.alternative ?? "")
                     .padding(.trailing,70)
             }
-            Text("this is a curated list of African foods that makes you feel like you never leave home! very useful for new entrants!")
+            Text(food?.description ?? "")
                 .padding()
                 .foregroundColor(.greyColor)
             HStack{
@@ -41,7 +42,7 @@ struct HealthySwapDetailView: View {
                 Spacer()
                     
             }
-            Text("Asda stores,zamzam stores,George stores stores,sainsbury,tesco,zamzam,Morrissons and the others")
+            Text(food?.stores ?? "")
                 .foregroundColor(.greyColor)
                 .padding()
             Spacer()

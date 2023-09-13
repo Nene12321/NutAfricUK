@@ -62,7 +62,7 @@ final class SignUpViewModel: ObservableObject {
         db.collection("users").document(uid).setData([
             "email": model.email,
             "firstname":model.firstname,
-            "uid": uid,
+            "id": uid,
             "image": image
         ]) { [weak self] err in
             if let err = err {

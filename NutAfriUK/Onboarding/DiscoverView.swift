@@ -8,54 +8,73 @@
 import SwiftUI
 
 struct DiscoverView: View {
+    @State private var currentTab = 0
+    @AppStorage("applicationstate") var applicationstate: String = "onboarding"
     var body: some View {
-        VStack{
-          Image("discoverr")
-                .resizable()
-                .frame(width:280, height: 283)
-                .padding(.top,100)
-            Text("Discover")
-                .font(.custom("Poppins-SemiBold", size: 25))
-                .padding(.bottom, 1)
-               
-            Text("Find African foods & ")
-                .font(.custom("Poppins-Regular", size: 17))
-                .foregroundColor(.greyColor)
+        TabView(selection: $currentTab,
+                        content:  {
+            ForEach(onboardingList()) { viewData in
                 
-            Text("healthy alternative available in the UK")
-                .font(.custom("Poppins-Regular", size: 17))
-                .foregroundColor(.greyColor)
-              
-            Spacer()
                 
-            HStack{
-                Button {
+                VStack{
+                    Image(viewData.image)
+                        .resizable()
+                        .frame(width:280, height: 283)
+                        .padding(.top,100)
+                    Text(viewData.title)
+                        .font(.custom("Poppins-SemiBold", size: 25))
+                        .padding(.bottom, 1)
                     
-                } label: {
-                    Text("SKIP")
-                        .font(.custom("Poppins-Regular", size: 12))
-                        .foregroundColor(.black)
-                        
-                }
-                Spacer()
-                Image("splashdotone")
-                    .resizable()
-                    .frame(width: 50,height: 10)
-                Spacer()
-                
-                Button {
+                    Text(viewData.text)
+                        .font(.custom("Poppins-Regular", size: 17))
+                        .foregroundColor(.greyColor)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
+                        .padding(.top)
+                   
                     
-                } label: {
-                    Text("NEXT")
-                        .font(.custom("Poppins-Regular", size: 12))
-                        .foregroundColor(.black)
+                    Spacer()
+                    
+                    HStack{
+                        Button {
+                            applicationstate = "register"
+                        } label: {
+                            Text("SKIP")
+                                .font(.custom("Poppins-Regular", size: 12))
+                                .foregroundColor(.black)
+                            
+                        }
+                        Spacer()
+                        Image(viewData.indicatorimage)
+                            .resizable()
+                            .frame(width: 50,height: 10)
+                        Spacer()
                         
+                        Button {
+                            moveToNext()
+                        } label: {
+                            Text("NEXT")
+                                .font(.custom("Poppins-Regular", size: 12))
+                                .foregroundColor(.black)
+                            
+                        }
+                        
+                    }
+                    .padding(.horizontal)
                 }
-
+                .tag(viewData)
             }
-            .padding(.horizontal)
+        })
+                  .tabViewStyle(PageTabViewStyle())
+                  .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .automatic))
+    }
+    
+    func moveToNext(){
+        if currentTab < 3{
+            currentTab += 1
+        }else{
+            applicationstate = "register"
         }
-        
     }
 }
 
@@ -64,3 +83,4 @@ struct DiscoverView_Previews: PreviewProvider {
         DiscoverView()
     }
 }
+

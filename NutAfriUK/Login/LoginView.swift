@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @ObservedObject var viewModel:LoginViewModel = LoginViewModel()
+    @AppStorage("applicationstate") var applicationstate: String = "onboarding"
     @State var email = ""
     @State var password = ""
     var body: some View {
@@ -23,14 +24,14 @@ struct LoginView: View {
                 .keyboardType(.emailAddress)
                 .border(.black)
                 .autocapitalization(.none).placeholder(when: email.isEmpty) {
-                    Text("   Email")
+                    Text("Email")
                         .font(.custom("Poppins-Regular", size: 10))
                         .foregroundColor(.gray)
                 }
                 .padding(.horizontal)
                 .padding(.bottom)
                
-            TextField("", text: $password)
+            SecureField("", text: $password)
                 .frame(height: 45)
                 .keyboardType(.emailAddress)
                 .border(.black)
@@ -58,7 +59,7 @@ struct LoginView: View {
             }
             
             Button {
-                
+                applicationstate = "register"
             } label: {
                 HStack{
                  Text("Don’t have account?")
@@ -77,6 +78,11 @@ struct LoginView: View {
                 .foregroundColor(.red)
              
             Spacer()
+        }
+        .onChange(of: viewModel.loginStatus) { newValue in
+            if newValue{
+                applicationstate = "home"
+            }
         }
     }
     

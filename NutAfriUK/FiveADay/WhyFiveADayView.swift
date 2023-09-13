@@ -8,12 +8,30 @@
 import SwiftUI
 
 struct WhyFiveADayView: View {
+    @Binding var isPresenting:Bool
     var body: some View
     {
         VStack{
-          Text("Why Five A Day?")
-                .font(.custom("Poppins-Medium", size: 18))
+        
+            ZStack{
+                HStack{
+                    Button {
+                       isPresenting = false
+                    } label: {
+                        Image(systemName: "arrow.backward")
+                            .foregroundColor(.black)
+                    }
+                    
+                    Spacer()
+                }
+                .padding(.leading)
                 .padding(.bottom)
+                
+                Text("Why Five A Day?")
+                    .font(.custom("Poppins-Medium", size: 18))
+                    .padding(.bottom)
+            }
+            
             Text("Five a Day is a simple guideline urging the consumption of five servings of fruits and vegetables daily. These nutrient-packed foods offer essential vitamins, minerals, and fiber, supporting overall health and reducing the risk of chronic illnesses.")
                 .font(.custom("Poppins-Regular",size: 12))
                 .padding(.horizontal)
@@ -38,6 +56,6 @@ struct WhyFiveADayView: View {
 
 struct WhyFiveADayView_Previews: PreviewProvider {
     static var previews: some View {
-        WhyFiveADayView()
+        WhyFiveADayView(isPresenting: .constant(false))
     }
 }

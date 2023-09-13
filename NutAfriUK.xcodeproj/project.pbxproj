@@ -15,6 +15,10 @@
 		178DB6482A6DAD3B00EAB1C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178DB6472A6DAD3B00EAB1C5 /* Assets.xcassets */; };
 		178DB64B2A6DAD3B00EAB1C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178DB64A2A6DAD3B00EAB1C5 /* Preview Assets.xcassets */; };
 		178DB6542A6DAE5300EAB1C5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178DB6532A6DAE5300EAB1C5 /* LoginView.swift */; };
+		17A2760D2AAD1C99003055B4 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A2760C2AAD1C99003055B4 /* PrivacyPolicyView.swift */; };
+		17A2760F2AAD238C003055B4 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A2760E2AAD238C003055B4 /* ReportView.swift */; };
+		17A276122AAD2DA3003055B4 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A276112AAD2DA3003055B4 /* MainTab.swift */; };
+		17A276142AAD367B003055B4 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A276132AAD367B003055B4 /* OnboardingModel.swift */; };
 		17A3F1B62A9283A800C2B40B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A3F1B52A9283A800C2B40B /* ImagePicker.swift */; };
 		17A3F1B92A928CB900C2B40B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 17A3F1B82A928CB900C2B40B /* FirebaseAnalytics */; };
 		17A3F1BB2A928CC200C2B40B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 17A3F1BA2A928CC200C2B40B /* FirebaseStorage */; };
@@ -27,14 +31,21 @@
 		17A6AF1C2A9153B500CB9368 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6AF1B2A9153B500CB9368 /* LoginModel.swift */; };
 		17A6AF1E2A91548C00CB9368 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6AF1D2A91548C00CB9368 /* SignupModel.swift */; };
 		17A6AF202A9154AA00CB9368 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A6AF1F2A9154AA00CB9368 /* SignupViewModel.swift */; };
+		17A9CF052A9688D5003839D8 /* HealthySwapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A9CF042A9688D5003839D8 /* HealthySwapViewModel.swift */; };
+		17A9CF072A9692D1003839D8 /* HealthySwapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A9CF062A9692D1003839D8 /* HealthySwapModel.swift */; };
 		17AD6FBA2A7D1AAA00A767B9 /* WhyFiveADayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FB92A7D1AAA00A767B9 /* WhyFiveADayView.swift */; };
-		17AD6FBC2A7D227300A767B9 /* FiveADayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FBB2A7D227300A767B9 /* FiveADayView.swift */; };
+		17AD6FBC2A7D227300A767B9 /* RecordMyProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FBB2A7D227300A767B9 /* RecordMyProgressView.swift */; };
 		17AD6FBE2A7D484100A767B9 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FBD2A7D484100A767B9 /* DiscoverView.swift */; };
 		17AD6FC42A7D5DBA00A767B9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FC32A7D5DBA00A767B9 /* ProfileView.swift */; };
 		17AD6FC62A7D6DF300A767B9 /* RecommendedChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FC52A7D6DF300A767B9 /* RecommendedChannelView.swift */; };
 		17AD6FC82A7D712600A767B9 /* YouTubeChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AD6FC72A7D712600A767B9 /* YouTubeChannelView.swift */; };
 		17B00FBB2A8D32B4005EED75 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B00FBA2A8D32B4005EED75 /* Launch Screen.storyboard */; };
 		17B00FC02A8D4417005EED75 /* CommunityChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B00FBF2A8D4417005EED75 /* CommunityChatView.swift */; };
+		17D557C42A990D7F00BA7C6E /* CommunityChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D557C32A990D7F00BA7C6E /* CommunityChatViewModel.swift */; };
+		17D557C62A99113B00BA7C6E /* CommunityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D557C52A99113B00BA7C6E /* CommunityModel.swift */; };
+		17D557C82A9937E700BA7C6E /* FiveADayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D557C72A9937E700BA7C6E /* FiveADayView.swift */; };
+		17D557CA2A99385800BA7C6E /* FiveADayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D557C92A99385800BA7C6E /* FiveADayViewModel.swift */; };
+		17D557CC2A993C7000BA7C6E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D557CB2A993C7000BA7C6E /* ProfileViewModel.swift */; };
 		17D99DDA2A6EDC4E00E30F55 /* AfricanFoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D99DD92A6EDC4E00E30F55 /* AfricanFoodDetailView.swift */; };
 		17D99DDC2A700FD700E30F55 /* HealthySwapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D99DDB2A700FD700E30F55 /* HealthySwapDetailView.swift */; };
 		17D99DDE2A719E7B00E30F55 /* HealthySwapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D99DDD2A719E7B00E30F55 /* HealthySwapView.swift */; };
@@ -63,20 +74,31 @@
 		178DB6472A6DAD3B00EAB1C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		178DB64A2A6DAD3B00EAB1C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		178DB6532A6DAE5300EAB1C5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		17A2760C2AAD1C99003055B4 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		17A2760E2AAD238C003055B4 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		17A276112AAD2DA3003055B4 /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		17A276132AAD367B003055B4 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		17A3F1B52A9283A800C2B40B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		17A6AF092A9149BD00CB9368 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		17A6AF192A91537600CB9368 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		17A6AF1B2A9153B500CB9368 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		17A6AF1D2A91548C00CB9368 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
 		17A6AF1F2A9154AA00CB9368 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		17A9CF042A9688D5003839D8 /* HealthySwapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthySwapViewModel.swift; sourceTree = "<group>"; };
+		17A9CF062A9692D1003839D8 /* HealthySwapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthySwapModel.swift; sourceTree = "<group>"; };
 		17AD6FB92A7D1AAA00A767B9 /* WhyFiveADayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyFiveADayView.swift; sourceTree = "<group>"; };
-		17AD6FBB2A7D227300A767B9 /* FiveADayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveADayView.swift; sourceTree = "<group>"; };
+		17AD6FBB2A7D227300A767B9 /* RecordMyProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordMyProgressView.swift; sourceTree = "<group>"; };
 		17AD6FBD2A7D484100A767B9 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		17AD6FC32A7D5DBA00A767B9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		17AD6FC52A7D6DF300A767B9 /* RecommendedChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedChannelView.swift; sourceTree = "<group>"; };
 		17AD6FC72A7D712600A767B9 /* YouTubeChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeChannelView.swift; sourceTree = "<group>"; };
 		17B00FBA2A8D32B4005EED75 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		17B00FBF2A8D4417005EED75 /* CommunityChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityChatView.swift; sourceTree = "<group>"; };
+		17D557C32A990D7F00BA7C6E /* CommunityChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityChatViewModel.swift; sourceTree = "<group>"; };
+		17D557C52A99113B00BA7C6E /* CommunityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityModel.swift; sourceTree = "<group>"; };
+		17D557C72A9937E700BA7C6E /* FiveADayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveADayView.swift; sourceTree = "<group>"; };
+		17D557C92A99385800BA7C6E /* FiveADayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveADayViewModel.swift; sourceTree = "<group>"; };
+		17D557CB2A993C7000BA7C6E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		17D99DD92A6EDC4E00E30F55 /* AfricanFoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricanFoodDetailView.swift; sourceTree = "<group>"; };
 		17D99DDB2A700FD700E30F55 /* HealthySwapDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthySwapDetailView.swift; sourceTree = "<group>"; };
 		17D99DDD2A719E7B00E30F55 /* HealthySwapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthySwapView.swift; sourceTree = "<group>"; };
@@ -118,6 +140,8 @@
 			children = (
 				17D99DDF2A71A33F00E30F55 /* CommunityView.swift */,
 				17B00FBF2A8D4417005EED75 /* CommunityChatView.swift */,
+				17D557C32A990D7F00BA7C6E /* CommunityChatViewModel.swift */,
+				17D557C52A99113B00BA7C6E /* CommunityModel.swift */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -143,6 +167,7 @@
 		178DB6422A6DAD3A00EAB1C5 /* NutAfriUK */ = {
 			isa = PBXGroup;
 			children = (
+				17A276102AAD2D8C003055B4 /* MainTab */,
 				17A6AF092A9149BD00CB9368 /* GoogleService-Info.plist */,
 				178DB6512A6DADE800EAB1C5 /* Login */,
 				178DB6522A6DAE0200EAB1C5 /* Register */,
@@ -158,7 +183,7 @@
 				178DB6452A6DAD3A00EAB1C5 /* ContentView.swift */,
 				178DB6472A6DAD3B00EAB1C5 /* Assets.xcassets */,
 				178DB6492A6DAD3B00EAB1C5 /* Preview Content */,
-				177C41332A8D57CF0049AE18 /* ProgressView.swift */,
+				17A2760C2AAD1C99003055B4 /* PrivacyPolicyView.swift */,
 			);
 			path = NutAfriUK;
 			sourceTree = "<group>";
@@ -191,6 +216,14 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		17A276102AAD2D8C003055B4 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				17A276112AAD2DA3003055B4 /* MainTab.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
 		17A3F1B72A928CB900C2B40B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,7 +235,10 @@
 			isa = PBXGroup;
 			children = (
 				17AD6FB92A7D1AAA00A767B9 /* WhyFiveADayView.swift */,
-				17AD6FBB2A7D227300A767B9 /* FiveADayView.swift */,
+				17AD6FBB2A7D227300A767B9 /* RecordMyProgressView.swift */,
+				177C41332A8D57CF0049AE18 /* ProgressView.swift */,
+				17D557C72A9937E700BA7C6E /* FiveADayView.swift */,
+				17D557C92A99385800BA7C6E /* FiveADayViewModel.swift */,
 			);
 			path = FiveADay;
 			sourceTree = "<group>";
@@ -212,7 +248,9 @@
 			children = (
 				17AD6FC72A7D712600A767B9 /* YouTubeChannelView.swift */,
 				17AD6FC52A7D6DF300A767B9 /* RecommendedChannelView.swift */,
+				17A2760E2AAD238C003055B4 /* ReportView.swift */,
 				17AD6FC32A7D5DBA00A767B9 /* ProfileView.swift */,
+				17D557CB2A993C7000BA7C6E /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -221,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				17AD6FBD2A7D484100A767B9 /* DiscoverView.swift */,
+				17A276132AAD367B003055B4 /* OnboardingModel.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -267,6 +306,8 @@
 			children = (
 				17D99DDB2A700FD700E30F55 /* HealthySwapDetailView.swift */,
 				17D99DDD2A719E7B00E30F55 /* HealthySwapView.swift */,
+				17A9CF042A9688D5003839D8 /* HealthySwapViewModel.swift */,
+				17A9CF062A9692D1003839D8 /* HealthySwapModel.swift */,
 			);
 			path = HealthyFood;
 			sourceTree = "<group>";
@@ -365,27 +406,38 @@
 				17F29C822A6DCAD100FDDCBD /* FoodView.swift in Sources */,
 				17A6AF1C2A9153B500CB9368 /* LoginModel.swift in Sources */,
 				17D99DDC2A700FD700E30F55 /* HealthySwapDetailView.swift in Sources */,
-				17AD6FBC2A7D227300A767B9 /* FiveADayView.swift in Sources */,
+				17AD6FBC2A7D227300A767B9 /* RecordMyProgressView.swift in Sources */,
+				17A276122AAD2DA3003055B4 /* MainTab.swift in Sources */,
 				17F29C852A6DCCFD00FDDCBD /* AfricanFoodView.swift in Sources */,
+				17D557C42A990D7F00BA7C6E /* CommunityChatViewModel.swift in Sources */,
 				17862EAB2A92A08A006105C9 /* FoodViewModel.swift in Sources */,
+				17D557CA2A99385800BA7C6E /* FiveADayViewModel.swift in Sources */,
 				178DB6542A6DAE5300EAB1C5 /* LoginView.swift in Sources */,
 				17A6AF1E2A91548C00CB9368 /* SignupModel.swift in Sources */,
 				17AD6FBA2A7D1AAA00A767B9 /* WhyFiveADayView.swift in Sources */,
 				17B00FC02A8D4417005EED75 /* CommunityChatView.swift in Sources */,
 				17F29C7F2A6DC3D800FDDCBD /* SignUpView.swift in Sources */,
+				17A276142AAD367B003055B4 /* OnboardingModel.swift in Sources */,
 				17A6AF1A2A91537600CB9368 /* LoginViewModel.swift in Sources */,
 				17D99DE02A71A33F00E30F55 /* CommunityView.swift in Sources */,
 				17AD6FC62A7D6DF300A767B9 /* RecommendedChannelView.swift in Sources */,
 				178DB6462A6DAD3A00EAB1C5 /* ContentView.swift in Sources */,
+				17A2760D2AAD1C99003055B4 /* PrivacyPolicyView.swift in Sources */,
+				17A2760F2AAD238C003055B4 /* ReportView.swift in Sources */,
 				17AD6FC42A7D5DBA00A767B9 /* ProfileView.swift in Sources */,
+				17D557CC2A993C7000BA7C6E /* ProfileViewModel.swift in Sources */,
 				17D99DDA2A6EDC4E00E30F55 /* AfricanFoodDetailView.swift in Sources */,
 				17D99DDE2A719E7B00E30F55 /* HealthySwapView.swift in Sources */,
+				17D557C82A9937E700BA7C6E /* FiveADayView.swift in Sources */,
+				17A9CF052A9688D5003839D8 /* HealthySwapViewModel.swift in Sources */,
 				17AD6FBE2A7D484100A767B9 /* DiscoverView.swift in Sources */,
+				17A9CF072A9692D1003839D8 /* HealthySwapModel.swift in Sources */,
 				178DB6442A6DAD3A00EAB1C5 /* NutAfriUKApp.swift in Sources */,
 				177C41342A8D57CF0049AE18 /* ProgressView.swift in Sources */,
 				17AD6FC82A7D712600A767B9 /* YouTubeChannelView.swift in Sources */,
 				17A3F1B62A9283A800C2B40B /* ImagePicker.swift in Sources */,
 				17862EAD2A92A097006105C9 /* FoodModel.swift in Sources */,
+				17D557C62A99113B00BA7C6E /* CommunityModel.swift in Sources */,
 				17F29C7D2A6DB95400FDDCBD /* Extensions.swift in Sources */,
 				17A6AF202A9154AA00CB9368 /* SignupViewModel.swift in Sources */,
 			);

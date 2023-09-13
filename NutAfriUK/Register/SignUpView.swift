@@ -14,6 +14,8 @@ struct SignUpView: View {
     @State var password = ""
     @State var shouldShowImagePicker = false
     @State var image: UIImage?
+    @AppStorage("applicationstate") var applicationstate: String = "onboarding"
+    @State private var isPresenting = false
     
     var body: some View {
         VStack{
@@ -65,6 +67,19 @@ struct SignUpView: View {
                 }
                 .padding(.horizontal)
             
+            
+            Button {
+                isPresenting = true
+            } label: {
+                HStack{
+                 Text("By clicking On signup, You have read and agreed to our privacy policy")
+                        .font(.custom("Poppins-Regular", size: 12))
+                        .foregroundColor(.black)
+                    
+                }
+                
+            }
+            
             Button {
                 register()
             } label: {
@@ -82,7 +97,7 @@ struct SignUpView: View {
             }
             
             Button {
-                
+                applicationstate = "login"
             } label: {
                 HStack{
                  Text("already have account?")
@@ -105,6 +120,14 @@ struct SignUpView: View {
         .fullScreenCover(isPresented: $shouldShowImagePicker, onDismiss: nil) {
             ImagePicker(image: $image)
                 .ignoresSafeArea()
+        }
+        .navigationDestination(isPresented: $isPresenting, destination: {
+          PrivacyPolicyView()
+        })
+        .onChange(of: viewModel.signupStatus) { newValue in
+            if newValue{
+               applicationstate = "home"
+            }
         }
     }
     
